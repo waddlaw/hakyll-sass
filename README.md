@@ -13,8 +13,9 @@ To install, run the following command:
 
 ## Build Status
 
-![](https://github.com/waddlaw/hakyll-sass/workflows/build/badge.svg)
-[![Build status](https://ci.appveyor.com/api/projects/status/l7csolb0hch9ml2v?svg=true)](https://ci.appveyor.com/project/waddlaw/hakyll-sass)
+![build](https://github.com/waddlaw/hakyll-sass/workflows/build/badge.svg)
+![Linux](https://github.com/waddlaw/hakyll-sass/workflows/Linux/badge.svg)
+![lint](https://github.com/waddlaw/hakyll-sass/workflows/lint/badge.svg)
 
 ## Usage Instructions
 
