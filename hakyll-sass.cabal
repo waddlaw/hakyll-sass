@@ -9,7 +9,7 @@ author:        Braden Walters
 maintainer:    vc@braden-walters.info
 category:      Web
 build-type:    Simple
-tested-with:   GHC ==8.8.2
+tested-with:   GHC ==8.8.3
 description:
   Hakyll compiler which indirectly uses libsass to compile SASS and SCSS to CSS.
   The Ruby SASS compiler is not required. For documentation, see the
