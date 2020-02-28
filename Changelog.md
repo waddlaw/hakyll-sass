@@ -1,9 +1,15 @@
 # Change Log
 
+## unreleased chanlges
+
+- Drop support GHC-8.6
+- Support GHC-8.8
+- Added Windows and Mac testing to Github Action.
+
 ## 0.3 - 2019-12-30
 
 - Drop support GHC-7.10, GHC-8.0
 - Support GHC-8.6.5
-- Add CI: Github Actions
-- Add CI: Appveyor
-- Drop CI: travis ci
+- CI: Add Github Actions
+- CI: Add Appveyor
+- CI: Drop travis ci
