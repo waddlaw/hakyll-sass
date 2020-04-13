@@ -2,6 +2,8 @@
 
 ## unreleased chanlges
 
+## 0.3.1 - 2020-04-13
+
 - Drop support GHC-8.6
 - Support GHC-8.8
 - Added Windows and Mac testing to Github Action.
