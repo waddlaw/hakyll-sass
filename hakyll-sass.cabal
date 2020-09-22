@@ -9,7 +9,7 @@ author:        Braden Walters
 maintainer:    Shinya Yamaguchi
 category:      Web
 build-type:    Simple
-tested-with:   GHC ==8.8.3
+tested-with:   GHC ==8.6.5 || ==8.8.4
 description:
   Hakyll compiler which indirectly uses libsass to compile SASS and SCSS to CSS.
   The Ruby SASS compiler is not required. For documentation, see the
@@ -19,7 +19,7 @@ library
   exposed-modules:  Hakyll.Web.Sass
   build-depends:
     , aeson-pretty  ^>=0.8
-    , base          >=4.7  && <5
+    , base          >=4.7  && <4.15
     , filepath      ^>=1.4
     , hakyll        ^>=4.13
     , hsass         ^>=0.8

@@ -2,6 +2,10 @@
 
 ## unreleased chanlges
 
+## 0.3.2 - 2020-09-22
+
+- Add CI: GHC-8.8.4
+
 ## 0.3.1 - 2020-04-13
 
 - Drop support GHC-8.6
