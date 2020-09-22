@@ -13,7 +13,7 @@ To install, run the following command:
 
 ## Build Status
 
-[![linux](https://github.com/waddlaw/hakyll-sass/workflows/linux/badge.svg)](https://github.com/waddlaw/hakyll-sass/actions?query=workflow%3ALinux)
+[![build](https://github.com/waddlaw/hakyll-sass/workflows/build/badge.svg)](https://github.com/waddlaw/hakyll-sass/actions?query=workflow%3Abuild)
 [![lint](https://github.com/waddlaw/hakyll-sass/workflows/lint/badge.svg)](https://github.com/waddlaw/hakyll-sass/actions?query=workflow%3Alint)
 
 ## Usage Instructions
