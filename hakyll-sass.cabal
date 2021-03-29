@@ -1,6 +1,6 @@
 cabal-version: 2.4
 name:          hakyll-sass
-version:       0.3.1
+version:       0.3.3
 synopsis:      Hakyll SASS compiler over hsass
 license:       MIT
 license-file:  LICENSE
@@ -9,7 +9,7 @@ author:        Braden Walters
 maintainer:    Shinya Yamaguchi
 category:      Web
 build-type:    Simple
-tested-with:   GHC ==8.6.5 || ==8.8.4
+tested-with:   GHC ==8.6.5 || ==8.8.4 || ==8.10.4
 description:
   Hakyll compiler which indirectly uses libsass to compile SASS and SCSS to CSS.
   The Ruby SASS compiler is not required. For documentation, see the
@@ -21,11 +21,10 @@ library
     , aeson-pretty  ^>=0.8
     , base          >=4.7  && <4.15
     , filepath      ^>=1.4
-    , hakyll        ^>=4.13
+    , hakyll        >=4.13 && <4.15
     , hsass         ^>=0.8
 
   hs-source-dirs:   src
-
   ghc-options:
     -Wall -Wcompat -Wincomplete-uni-patterns
     -Wincomplete-record-updates -Wnoncanonical-monad-instances

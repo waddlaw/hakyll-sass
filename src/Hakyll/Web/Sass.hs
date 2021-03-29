@@ -5,21 +5,21 @@
 -- Maintainer: Braden Walters <vc@braden-walters.info>
 -- Stability: experimental
 -- Portability: ghc
-
 module Hakyll.Web.Sass
-( sassCompiler
-, sassCompilerWith
-, renderSass
-, renderSassWith
-, selectFileType
-, sassDefConfig
-, module Text.Sass.Options
-) where
+  ( sassCompiler,
+    sassCompilerWith,
+    renderSass,
+    renderSassWith,
+    selectFileType,
+    sassDefConfig,
+    module Text.Sass.Options,
+  )
+where
 
 import Control.Monad (join)
 import Hakyll.Core.Compiler
-import Hakyll.Core.Identifier
 import Hakyll.Core.Compiler.Internal
+import Hakyll.Core.Identifier
 import Hakyll.Core.Item
 import Hakyll.Core.Provider
 import System.FilePath (takeExtension)
@@ -42,9 +42,9 @@ sassCompilerWith options = getResourceBody >>= renderSassWith options
 renderSass :: Item String -> Compiler (Item String)
 renderSass item =
   let extension = (takeExtension . toFilePath . itemIdentifier) item
-  in case selectFileType sassDefConfig extension of
-       Just options -> renderSassWith options item
-       Nothing -> fail "File type must be .scss or .sass."
+   in case selectFileType sassDefConfig extension of
+        Just options -> renderSassWith options item
+        Nothing -> fail "File type must be .scss or .sass."
 
 -- | Compiles a SASS file item into CSS with options. The file extension will
 -- not be used to determine SCSS from SASS formatting.
@@ -60,8 +60,8 @@ renderSassWith options item = join $ do
 
 -- | Use the file extension to determine whether to use indented syntax.
 selectFileType :: SassOptions -> String -> Maybe SassOptions
-selectFileType options ".scss" = Just $ options { sassIsIndentedSyntax = False }
-selectFileType options ".sass" = Just $ options { sassIsIndentedSyntax = True }
+selectFileType options ".scss" = Just $ options {sassIsIndentedSyntax = False}
+selectFileType options ".sass" = Just $ options {sassIsIndentedSyntax = True}
 selectFileType _ _ = Nothing
 
 -- | Default sass configuration.
