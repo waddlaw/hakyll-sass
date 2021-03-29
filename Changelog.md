@@ -2,6 +2,12 @@
 
 ## unreleased chanlges
 
+## 0.3.3 - 2021-03-29
+
+- Add CI: GHC-8.10
+- Add CI: format check
+- AddCCI: outdated check
+
 ## 0.3.2 - 2020-09-22
 
 - Add CI: GHC-8.8.4
